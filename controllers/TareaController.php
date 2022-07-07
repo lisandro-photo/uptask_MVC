@@ -37,7 +37,7 @@ class TareaController
                     'tipo' => 'error',
                     'mensaje' => 'Hubo un Error al agregar la Tarea'
                 ];
-                echo json_encode($respuesta);
+                echo json_encode($respuesta, JSON_UNESCAPED_UNICODE);
                 return;
             }
 
@@ -51,7 +51,7 @@ class TareaController
                 'mensaje' => 'Tarea Creada Correctamente',
                 'proyectoId' => $proyecto->id
             ];
-            echo json_encode($respuesta);
+            echo json_encode($respuesta, JSON_UNESCAPED_UNICODE);
         }
     }
 
@@ -68,7 +68,7 @@ class TareaController
                     'tipo' => 'error',
                     'mensaje' => 'Hubo un Error al actualizar la Tarea'
                 ];
-                echo json_encode($respuesta);
+                echo json_encode($respuesta, JSON_UNESCAPED_UNICODE);
                 return;
             }
 
@@ -102,7 +102,7 @@ class TareaController
                     'tipo' => 'error',
                     'mensaje' => 'Hubo un Error al actualizar la Tarea'
                 ];
-                echo json_encode($respuesta);
+                echo json_encode($respuesta, JSON_UNESCAPED_UNICODE);
                 return;
             }
 
@@ -115,7 +115,7 @@ class TareaController
                 'tipo' => 'exito'
             ];
 
-            echo json_encode($resultado);
+            echo json_encode($resultado, JSON_UNESCAPED_UNICODE);
         }
     }
 }
